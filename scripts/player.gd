@@ -2,7 +2,7 @@ extends CharacterBody2D
 
 @onready var animated_sprite_2d: AnimatedSprite2D = $AnimatedSprite2D
 
-var gravity = 100 
+var gravity = 900
 var  SPEED = 300.0
 var JUMP_VELOCITY = -400.0
 var walkingspeed = 120
@@ -87,12 +87,13 @@ func dojump() -> void:
 	
 func movement() -> void :
 	var dir : = Input.get_axis("left","right")
-	
+	var isrunning =  Input.is_action_pressed("running")
 	if dir != 0:
-		velocity.x = dir*SPEED
+		var speed =  SPEED if isrunning else walkingspeed
+		velocity.x = dir*speed
 		animated_sprite_2d.flip_h = dir < 0
 	else :
-		move_toward(velocity.x, 0.0, SPEED * 0.2)
+		velocity.x = move_toward(velocity.x, 0.0, SPEED * 0.2)
 		
 		
 		
@@ -104,7 +105,7 @@ func updatestates() -> void :
 	if not is_on_floor() :
 		state = states.jump if velocity.y < 0 else states.fall
 	elif abs(velocity.x)>5 :
-		state = states.run  if abs(velocity.x) > walkingspeed + 10 else states.walk
+		state = states.run  if Input.is_action_pressed("running") else states.walk
 	else :
 		state = states.idle
 		

@@ -540,7 +540,8 @@ size = Vector2(109, 72)
 script = ExtResource("1_kp0if")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1474114525]
-position = Vector2(1, 1)
+position = Vector2(9.5, -0.5)
+scale = Vector2(1.0039063, 0.9709302)
 sprite_frames = SubResource("SpriteFrames_u8vuu")
 animation = &"idle"
 autoplay = "idle"
@@ -550,6 +551,12 @@ frame_progress = 0.8040001
 position = Vector2(-1, 49.5)
 shape = SubResource("RectangleShape2D_qmsq4")
 
+[node name="hurtbox" type="Area2D" parent="." unique_id=477447639]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="hurtbox" unique_id=1108694361]
+position = Vector2(7, 44)
+shape = SubResource("RectangleShape2D_kp0if")
+
 [node name="jumpbuffer" type="Timer" parent="." unique_id=203510847]
 wait_time = 0.139
 one_shot = true
@@ -558,8 +565,4 @@ one_shot = true
 wait_time = 0.14
 one_shot = true
 
-[node name="hurtbox" type="Area2D" parent="." unique_id=477447639]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="hurtbox" unique_id=1108694361]
-position = Vector2(3.5, 40)
-shape = SubResource("RectangleShape2D_kp0if")
+[node name="Camera2D" type="Camera2D" parent="." unique_id=806686316]

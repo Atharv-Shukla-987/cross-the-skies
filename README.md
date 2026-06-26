@@ -7,9 +7,10 @@ GD resouce and GD script using GODOT
 
 
 # Project Structure
--Addons
+- Addons
 - assets
 - scripts
+- scenes
 
 
 # controlls

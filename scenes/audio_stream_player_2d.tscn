@@ -1,0 +1,7 @@
+[gd_scene format=3 uid="uid://du5uj7ry2833c"]
+
+[ext_resource type="AudioStream" uid="uid://cklvuk7lqebsg" path="res://assets/bombinsound-football-football-soccer-game-music-08-second-490554.mp3" id="1_issok"]
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" unique_id=148390212]
+stream = ExtResource("1_issok")
+autoplay = true

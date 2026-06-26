@@ -1,0 +1,12 @@
+[gd_scene format=3 uid="uid://d1svpp5plyjip"]
+
+[ext_resource type="Texture2D" uid="uid://6xovoe1r6hnm" path="res://assets/Cloudy-Pack-Free/GameBoy Clouds/Dithered/mountains-background-game-vector.jpg" id="1_svkug"]
+
+[node name="Parallax2D" type="Parallax2D" unique_id=715206616]
+scroll_scale = Vector2(0.1, 0.1)
+repeat_size = Vector2(100, 100)
+
+[node name="MountainsBackgroundGameVector" type="Sprite2D" parent="." unique_id=1662530692]
+position = Vector2(551, 398)
+scale = Vector2(1.7235712, 2.225714)
+texture = ExtResource("1_svkug")

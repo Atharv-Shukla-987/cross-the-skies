@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://121vvxlcfon5"]
+
+[ext_resource type="Texture2D" uid="uid://fd6ikwyiksrj" path="res://assets/Cloudy-Pack-Free/_Sunny Clouds/Dithered/Cloud-2.png" id="1_4xwbv"]
+
+[node name="clouds" type="AnimatableBody2D" unique_id=418651453]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=381962931]
+position = Vector2(84, 53)
+texture = ExtResource("1_4xwbv")
+flip_v = true
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="." unique_id=1651151097]
+polygon = PackedVector2Array(32, 36, 32, 37, 57, 63, 86, 83, 108, 68, 133, 43, 142, 33, 132, 32, 120, 27, 98, 26, 78, 24, 58, 26, 32, 35)

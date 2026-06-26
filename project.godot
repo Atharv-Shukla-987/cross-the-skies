@@ -11,8 +11,13 @@ config_version=5
 [application]
 
 config/name="cross the skies"
+run/main_scene="uid://0agin1s85v74"
 config/features=PackedStringArray("4.6", "GL Compatibility")
 config/icon="res://icon.svg"
+
+[autoload]
+
+AudioStreamPlayer2d="*uid://du5uj7ry2833c"
 
 [editor_plugins]
 
@@ -21,6 +26,7 @@ enabled=PackedStringArray("res://addons/godot_super-wakatime/plugin.cfg")
 [global_group]
 
 spikes=""
+player=""
 
 [input]
 

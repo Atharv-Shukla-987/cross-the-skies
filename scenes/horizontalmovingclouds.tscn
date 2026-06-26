@@ -1,0 +1,7 @@
+[gd_scene format=3 uid="uid://dlub3gc2yeg7"]
+
+[ext_resource type="PackedScene" uid="uid://121vvxlcfon5" path="res://scenes/clouds.tscn" id="1_vglce"]
+
+[node name="horizontalmovingclouds" type="Node" unique_id=1294128461]
+
+[node name="clouds" parent="." unique_id=418651453 instance=ExtResource("1_vglce")]

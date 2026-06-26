@@ -4,8 +4,9 @@ extends CharacterBody2D
 
 var gravity = 900
 var  SPEED = 300.0
-var JUMP_VELOCITY = -400.0
-var walkingspeed = 120
+var JUMP_VELOCITY = -490.0
+var walkingspeed = 135
+
 
 var fallkill  = 500 
 var jumpcut:float = .5
@@ -17,7 +18,6 @@ enum states{
 	run,
 	jump,
 	fall
-	
 }
 
 var state:states = states.idle

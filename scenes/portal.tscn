@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://b43nmrr5nfc16"]
+
+[ext_resource type="PackedScene" uid="uid://btuwfs3ux06bm" path="res://scenes/animated_sprite_2d.tscn" id="1_v0xau"]
+
+[node name="Node" type="Node" unique_id=1870231619]
+
+[node name="AnimatedSprite2D" parent="." unique_id=1688018079 instance=ExtResource("1_v0xau")]
+position = Vector2(4, 4)

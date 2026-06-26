@@ -539,6 +539,9 @@ size = Vector2(109, 72)
 [node name="player" type="CharacterBody2D" unique_id=1810296684 groups=["player"]]
 script = ExtResource("1_kp0if")
 
+[node name="Camera2D" type="Camera2D" parent="." unique_id=806686316]
+position_smoothing_enabled = true
+
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1474114525]
 position = Vector2(7.9999924, -1.1622906e-06)
 scale = Vector2(0.99218744, 0.9767442)
@@ -564,6 +567,3 @@ one_shot = true
 [node name="Timer" type="Timer" parent="." unique_id=421916516]
 wait_time = 0.14
 one_shot = true
-
-[node name="Camera2D" type="Camera2D" parent="." unique_id=806686316]
-position_smoothing_enabled = true

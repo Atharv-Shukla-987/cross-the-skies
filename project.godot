@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="cross the skies"
-run/main_scene="uid://0agin1s85v74"
+run/main_scene="uid://c6tylbmen2oyn"
 config/features=PackedStringArray("4.6", "GL Compatibility")
 config/icon="res://icon.svg"
 

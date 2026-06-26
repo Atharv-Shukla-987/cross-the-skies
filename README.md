@@ -16,6 +16,9 @@ GD resouce and GD script using GODOT
 # controlls
 
 left arrow - move left
+
 right arrow - move right
+
 space - jump
+
 q + movement  =  jump

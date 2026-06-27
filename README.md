@@ -22,3 +22,8 @@ right arrow - move right
 space - jump
 
 q + movement  =  jump
+
+
+#how to play 
+go to https://atharv-shukla-987.itch.io/cross-the-skies 
+and enjoy ur game
